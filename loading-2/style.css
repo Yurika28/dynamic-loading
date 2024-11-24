@@ -1,0 +1,50 @@
+body{
+    min-height: 100vh;
+    width: 100wv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.road{
+    position: relative;
+    height: 50vh;
+    width: 80vw;
+    background-color: black;
+    background: url(./rb_1384\ -\ Copy.png);
+    background-size: cover;
+    
+}
+
+.road img:first-child{
+    position: absolute;
+    bottom: 25px;
+    height: auto;
+    max-width:30%;
+    animation: loads 2s ease-in-out infinite;
+    z-index: -1;
+}
+
+
+@keyframes loads{
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 80%;
+    }
+}
+
+@media(max-width:480px){
+    .road img:first-child{
+        bottom: 18px;
+    }
+}
+
+@media(max-width:720px){
+    .road img:first-child{
+        bottom: 30px;
+    }
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-loading > polyline{
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.back{
+    stroke: rgb(0, 74, 0);
+}
+
+.following{
+    stroke: lightgreen;
+    stroke-width: 4;
+    stroke-dasharray: 795, 795;
+    animation: following 3s linear infinite;
+}
+
+@keyframes following{
+    from {
+        opacity: 0;
+        stroke-dashoffset: 1590;
+      }
+    
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
